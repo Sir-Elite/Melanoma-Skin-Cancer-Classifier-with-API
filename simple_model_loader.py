@@ -44,7 +44,6 @@ def find_and_load_model():
     model_files = [
         ("melanoma-skin-cancer_vgg19.pkl", "VGG19 Melanoma Classifier"),
         ("melanoma.efficientnetb7.pkl", "EfficientNetB7 Melanoma Classifier"),
-        ("PIMA-Indian-Diabetes_BaggingClassifier.pkl", "Diabetes Classifier")
     ]
     
     for model_file, model_name in model_files:
