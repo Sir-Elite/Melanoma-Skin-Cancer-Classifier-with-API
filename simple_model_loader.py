@@ -40,6 +40,9 @@ def find_and_load_model():
     Returns:
         tuple: (model, model_name) or (None, "No model loaded")
     """
+    # Get the directory where this script is located
+    script_dir = Path(__file__).parent
+    
     # Priority order of models to try
     model_files = [
         ("melanoma-skin-cancer_vgg19.pkl", "VGG19 Melanoma Classifier"),
@@ -47,7 +50,8 @@ def find_and_load_model():
     ]
     
     for model_file, model_name in model_files:
-        model_path = Path(model_file)
+        # Look for model file in the same directory as this script
+        model_path = script_dir / model_file
         if model_path.exists():
             model = load_sklearn_model(model_path)
             if model is not None:
