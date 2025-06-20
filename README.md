@@ -6,6 +6,12 @@ A FastAPI-based melanoma skin cancer classification system using a VGG19 deep le
 
 **This tool is for educational and screening purposes only. It is NOT a substitute for professional medical diagnosis. Always consult qualified healthcare professionals for medical advice and proper diagnosis.**
 
+## Before Setting Up this repo
+
+Go to this Google Drive folder `AI Models` and download:
+- `melanoma-skin-cancer_vgg19.pkl`
+- `melanoma.efficientnetb7.pkl`
+
 ## 🎯 Features
 
 - 🖼️ **Image Upload Interface**: Drag-and-drop web interface for easy image uploads
